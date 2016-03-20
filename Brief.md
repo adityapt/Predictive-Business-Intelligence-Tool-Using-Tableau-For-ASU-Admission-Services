@@ -10,9 +10,14 @@ submittals and finally convince students to select ASU for their higher Ed desti
 
 The goals of this project are as follows:
  
-•	Identify data points needed to measure effectiveness recruitment efforts.
+•	Identify data points needed to measure effectiveness recruitment efforts
+
 • Target focus – International Students only
-•	Identify top markets and areas for potential growth and/or areas of poor return.
-•	Prepare data driven recommendation for changes, additions, and/or alterations to efforts.
+
+•	Identify top markets and areas for potential growth and/or areas of poor return
+
+•	Prepare data driven recommendation for changes, additions, and/or alterations to efforts
+
 •	Build an analytics model that enables ASU to clearly identify cost benefit for recruitment efforts, as well being able to drill down and understand cost/benefit for individual markets
+
 •	Provision of predictive analytics and a model for extending this, to identify patterns that can be used to predict and understand impact of future market targeting.
