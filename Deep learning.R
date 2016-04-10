@@ -1,4 +1,62 @@
+#read the data
+setwd("~/PT/capstone")
+dir()
+mod = read.csv("modifiedcsv3302016.csv", na.strings = c("","NA"))[,c(-1,-97,-98)]
+names(mod)
+
+summary(mod$X.2)
+
+#for admit
+columns = 
+  c(
+    "APPNUMBERS",
+    "TERMCODE",
+    "ADMITTYPEADJ",
+    "CENSUSAPPCOLLEGECODE",
+    "CENSUSAPPDEPTADJCODE",
+    "CENSUSAPPDEGREECODE",
+    "CENSUSAPPACADEMICPLANCODE",
+    "GENDERCODE",
+    "MKT",
+    "HIGHSCHOOLCODE",
+    "HIGHSCHOOLGPA",
+    "HIGHSCHOOLABORGPA",
+    "HIGHSCHOOLRANKPERCENT",
+    "HIGHSCHOOLGRADUATIONYEAR",
+    "SATCOMBINEDEXAMSCORE",
+    "SATCOMBINEDEXAMSCOREADJ",
+    "SATVERBALEXAMSCORE",
+    "SATQUANTITATIVEEXAMSCORE",
+    "ACTCOMPOSITEEXAMSCORE",
+    "CALCULATEDINDEX",
+    "CALCULATEDINDEXGROUP",
+    "LASTTRANSFERINSTCODE",
+    "CUMULATIVETRANSFERGPA",
+    "STUDENTCAMPUSDESCRIPTION",
+    "ADMIT",
+    "PROVINCEDATA",
+    "ASUADSHSCHNAME",
+    "MONTHYEAR",
+    "ASUCITZNCOUNTRYLD",
+    "VISADESCR",
+    "VISAPERMIT",
+    "UGRDINTLGPA",
+    "IELTSSCORE",
+    "TOEFLCOMP",
+    "ADMEVALCOMPLETEDT",
+    "FIRSTAPPROG",
+    "FIRSTAPPLAN",
+    "FIRSTADPROG",
+    "FIRSTADPLAN",
+    "APPLICATIONYEAR",
+    "STUDENTCOMPLETEDATE",
+    "EVALADMIT"
+  )
+
 # Deep learning using R
+
+ml = mod[,columns]
+names(ml)
 
 install.packages("h2o")
 library(h2o)
